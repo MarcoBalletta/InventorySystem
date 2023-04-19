@@ -10,7 +10,7 @@ public class ItemData : ScriptableObject
     [SerializeField] private int id;
     [SerializeField] private float weight;
     [SerializeField] private float sellValue;
-    [SerializeField] private Image icon;
+    [SerializeField] private Sprite icon;
     [SerializeField] protected ItemEnums.ItemType type;
     [SerializeField] private GameObject dropItem;
 

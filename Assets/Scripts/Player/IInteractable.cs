@@ -4,6 +4,8 @@ using UnityEngine;
 
 public interface IInteractable
 {
+    public string InteractableName{ get; }
+
     public delegate void SpottedItem(IInteractable interactable);
     public SpottedItem onSpottedItem { get; set; }
 

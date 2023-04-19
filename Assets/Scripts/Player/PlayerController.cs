@@ -19,9 +19,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && interaction.interactablesSelected.Count > 0)
+        if (Input.GetKeyDown(KeyCode.E) && interaction.listOfInteractables.Count > 0)
         {
-            interaction.interactablesSelected[0].Interact(this);
+            if(interaction.SelectedInteractable != null)
+                interaction.SelectedInteractable.Interact(this);
+        }
+
+        if(Input.GetKeyDown(KeyCode.K) && interaction.listOfInteractables.Count > 1)
+        {
+            interaction.SwitchInteractableItem();
         }
 
         if(Input.GetKeyDown(KeyCode.Q) && inventory.items.Count > 0)

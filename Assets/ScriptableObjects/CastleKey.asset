@@ -16,6 +16,6 @@ MonoBehaviour:
   id: 1
   weight: 10
   sellValue: 150
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: c5f7f7e3808968f46a22063bf3faceae, type: 3}
   type: 5
   dropItem: {fileID: 3992649670960167868, guid: d713a8ea3586c904f92db82901b8cc04, type: 3}
