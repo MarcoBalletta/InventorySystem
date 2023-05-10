@@ -19,5 +19,6 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: aae720b4a8b01324382a48c84d9950ad, type: 3}
   type: 0
   dropItem: {fileID: 6892121556812582234, guid: 21a6d237f66bf0b429fc43f2d98e674c, type: 3}
+  equipItem: {fileID: 4910267094746145698, guid: ded9660a2035e7d46a0216a1702c5286, type: 3}
   weaponType: 0
   damage: 50

@@ -5,9 +5,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public InteractionComponent interaction;
-    public InventoryComponent inventory;
-    public PlayerMovement movement;
+    private InteractionComponent interaction;
+    private InventoryComponent inventory;
+    private PlayerMovement movement;
+
+    public InventoryComponent Inventory { get => inventory; }
 
     private void Start()
     {
@@ -33,6 +35,11 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Q) && inventory.items.Count > 0)
         {
             inventory.Drop(inventory.items[0]);
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            inventory.ToggleUIInventory();
         }
 
         movement.GetInput();

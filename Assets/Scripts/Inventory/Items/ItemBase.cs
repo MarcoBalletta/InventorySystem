@@ -11,7 +11,7 @@ public class ItemBase : InteractableBase
     {
         Debug.Log("pickup");
         base.Interact(controller);
-        controller.inventory.Pickup(data);
+        controller.Inventory.Pickup(data);
         Destroy(gameObject, 0.1f);
     }
 }
